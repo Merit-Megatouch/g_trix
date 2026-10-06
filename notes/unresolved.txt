@@ -1,0 +1,4 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host.cpp) before the game will start.
+# symbol | needed by
