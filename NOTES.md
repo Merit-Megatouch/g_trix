@@ -21,7 +21,7 @@ Facts: [notes/scaffold.md](notes/scaffold.md).
 
 ## Log
 - 2026-10-07 — First port. The bugs hit on the way (64-bit inode stat, static Translator,
-  Pango modules, StopSound use-after-free, OGG length, ...) are in docs/10-bug-catalogue.md.
+  Pango modules, StopSound use-after-free, OGG length, ...) are in megatouch-port docs/reference/known-bugs.md.
 - 2026-10-07 — Profiled a 100 s session: main thread 91% idle, ~4 ms/frame render+present,
   stalls only on first image loads and music track starts. 60 fps breaks game timing; stay at 30.
 - 2026-10-07 — Moved into the template layout; re-scaffolded from the image with no manual steps.
