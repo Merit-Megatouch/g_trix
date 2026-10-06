@@ -13,7 +13,8 @@ Facts: [notes/scaffold.md](notes/scaffold.md).
 - [x] Plays through with the profiler on (steady 30 fps)
 
 ## Known issues
-- `gfx/hud/common_files/tricks` is not found (data quirk).
+- `gfx/hud/common_files/tricks` is not found: the cabinet ships an empty `tricks/` folder beside
+  `tricks.spr.gz` (data quirk).
 - One sound is requested with an empty name.
 - Music track changes stall ~90 ms (whole OGG decoded at once) — stream it.
 - First use of large `.spr` animations stalls 100–200 ms — cache/preload decoded frames.
@@ -26,3 +27,5 @@ Facts: [notes/scaffold.md](notes/scaffold.md).
   stalls only on first image loads and music track starts. 60 fps breaks game timing; stay at 30.
 - 2026-10-07 — Moved into the template layout; re-scaffolded from the image with no manual steps.
 - 2026-10-07 — Game-over screen and saved hi-score now come from shared fixes made for Word Dojo 2.
+- 2026-10-07 — Fire animations (gfx/fire/fire_N, folders) were never found: the locator's
+  `//usr/...` paths slipped past the filesystem shim. Fixed while porting Boxxi Blitz.
